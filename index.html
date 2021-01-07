@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Real-time social distancing detection 😷 </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="loader">Loading Model...</div>
+<div id="app">
+   <video id="video" crossOrigin="anonymous" width="472" height="266" controls="true" loop>
+      <source src="https://codepen-asset-guimauve.s3-ap-southeast-2.amazonaws.com/video-street.mp4" type="video/mp4">
+     <source src="https://codepen-asset-guimauve.s3-ap-southeast-2.amazonaws.com/video-street.ogg" type="video/ogg" />
+   Your browser does not support mp4 and ogg extension.
+  </video>
+  <canvas id="canvas" width="472" height="266">
+  </canvas>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs'></script>
+<script src='https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!--
+*https://codepen-asset-guimauve.s3-ap-southeast-2.amazonaws.com/video-street.mp4
+*https://codepen-asset-guimauve.s3-ap-southeast-2.amazonaws.com/video-street.ogg
+-->

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html, body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+#app {
+  display: none;
+}
+
+#loader {
+  line-height: 100vh;
+  text-align: center;
+}
+
+#canvas,
+#video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+#canvas {
+  background: black;
+}
+
+:focus {
+  outline: none;
+}
